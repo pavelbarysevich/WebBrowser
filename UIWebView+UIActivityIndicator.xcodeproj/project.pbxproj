@@ -13,6 +13,7 @@
 		E6795A29264E89F1008C2732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6795A27264E89F1008C2732 /* Main.storyboard */; };
 		E6795A2B264E89F8008C2732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6795A2A264E89F8008C2732 /* Assets.xcassets */; };
 		E6795A2E264E89F8008C2732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6795A2C264E89F8008C2732 /* LaunchScreen.storyboard */; };
+		E6795A37264E99E3008C2732 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6795A36264E99E3008C2732 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E6795A2A264E89F8008C2732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6795A2D264E89F8008C2732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6795A2F264E89F8008C2732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6795A36264E99E3008C2732 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6795A37264E99E3008C2732 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				E6795A20264E89F1008C2732 /* UIWebView+UIActivityIndicator */,
 				E6795A1F264E89F1008C2732 /* Products */,
+				E6795A35264E99E3008C2732 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +69,14 @@
 				E6795A2F264E89F8008C2732 /* Info.plist */,
 			);
 			path = "UIWebView+UIActivityIndicator";
+			sourceTree = "<group>";
+		};
+		E6795A35264E99E3008C2732 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6795A36264E99E3008C2732 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "by.barysevich.UIWebView-UIActivityIndicator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +327,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "by.barysevich.UIWebView-UIActivityIndicator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -6,14 +6,50 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var goNextItem: UIBarButtonItem!
+    @IBOutlet weak var goBackItem: UIBarButtonItem!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        urlShare()
+        
+        }
+    
+    //urlsShare
+    func urlShare(){
+        if let myUrl = URL(string: "https://www.google.com"){
+        let resuest = URLRequest(url: myUrl)
+            webView.load(resuest)
+        }
     }
-
-
+    
+    //MARK: Action
+    @IBAction func goBackAction(_ sender: Any) {
+        if webView.canGoBack{
+            webView.goBack()
+        }
+        
+    }
+    @IBAction func goNextAction(_ sender: Any) {
+        if webView.canGoForward{
+            webView.goForward()
+        }
+    }
+    
+    @IBAction func refreshAction(_ sender: Any) {
+        webView.reload()
+    }
+    
+    @IBAction func houseAction(_ sender: Any) {
+        urlShare()
+    }
+    
 }
+
 
