@@ -52,19 +52,14 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7md-oA-sYP">
-                                <rect key="frame" x="197" y="438" width="20" height="20"/>
-                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Fe7-lt-uNT" secondAttribute="bottom" constant="78" id="Ee5-sm-J43"/>
                             <constraint firstItem="Fe7-lt-uNT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44" id="LiP-Tu-g0d"/>
-                            <constraint firstItem="7md-oA-sYP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="agc-oA-PTb"/>
                             <constraint firstItem="Fe7-lt-uNT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jIF-GS-ZjC"/>
                             <constraint firstItem="Fe7-lt-uNT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mdH-rg-Y5v"/>
-                            <constraint firstItem="7md-oA-sYP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="njr-IQ-OTM"/>
                         </constraints>
                     </view>
                     <connections>
